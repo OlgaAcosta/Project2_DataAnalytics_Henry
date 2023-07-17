@@ -5,7 +5,7 @@
            margin-right: auto;
            width: 50
            height=50"
-        src="https://cecs.anu.edu.au/sites/default/files/ada-banner.jpg" 
+        src="https://media.licdn.com/dms/image/D4D16AQFkgLIRJjy6SQ/profile-displaybackgroundimage-shrink_350_1400/0/1687728249782?e=1695254400&v=beta&t=Uhkp3KZk0aLDPW2rV1aL-k3LNBFXgUeaYGjuAhEo18k" 
         alt="DA"><p>
   <h2 align="center">Data Analytics</h2>
   <h3 align="center"> <i>Realizado por Olga Acosta </i></h3>
