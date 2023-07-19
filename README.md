@@ -10,6 +10,13 @@
   <h2 align="center">Data Analytics</h2>
   <h3 align="center"> <i>Realizado por Olga Acosta </i></h3>
 
+# 📑 Índice
+- [Introducción](#-📍--Introducción)
+- [Contenido del repositorio](#Contenido-del-repositorio)
+- [Contexto de los datos](#Contexto-de-los-datos)
+- [Flujo de trabajo](#Flujo-de-trabajo)
+- [Propuesta de negocio](#Propuesta-de-negocio)
+- [Herramientas utilizadas](#Herramientas-utilizadas)
 
 
 # 📍  Introducción
