@@ -87,17 +87,62 @@ A continuación, se dejan los enlaces a google drive donde se encuentran los dis
 Las diferentes etapas de transformación se llevaron a cabo con el propósito de obtener un conjunto de datos de excelente calidad, coherente y pertinente para su posterior análisis. Al asegurar la limpieza y estandarización de los datos, se establece una base sólida para obtener conclusiones fiables y tomar decisiones fundamentadas.
 
 ## 📊 [EDA](https://colab.research.google.com/drive/16Nlj4zOD7aJnHfpPK2QGs1Lk15Rx8416?usp=sharing)
-* Revisé primero el dataset relacionado a las conexiones por rango de velocidad 
+Analicé primero el dataset relacionado a las conexiones por rango de velocidad para ver su evolución en el tiempo, tomando en cuenta las conexiones totales.
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Total_conexiones_por_rango_velocidad.png" 
+        alt="Conexiones_rango_velocidad"><p>
+Luego examiné el porcentaje de conexiones por provincia respecto a su población para observar su evolución.
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Porcentaje_conexiones_provincia.png"><p>
+A partir de lo cual detecté las provincia que presentaban menor porcentaje de conexiones (por debajo del 15%) y grafiqué el incremento porcentual que tuvieron en los últimos cuatro años con el fin de establecer un promedio de crecimiento porcentual general en provincias bajas:
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Crecimiento_porcentual_conexiones_provincia.png"><p>
 
+## ✍ Conclusiones Principales:
+* De acuerdo al primer gráfico *Porcentaje de conexiones - Provincia Bajas*, se desprende que la mayoría de las provincias (porcentaje menor al 15%) presentan un incremento porcentual año tras año en los últimos cuatro años, a excepción de Mendoza y Santa Cruz, que disminuyeron entre los años 2019 a 2020 y 2018 a 2019 respectivamente.
+* Por otro lado, todas las provincias presentan un incremento porcentual entre el primer y último periodo evaluado (2018-1 a 2022-1).
+* Todas las provincias tienen al menos un salto evidente de crecimiento entre un periodo y otro.
+* Dirigir el enfoque en el aumento de conexiones por habitante en las provincias *Tucumán, Jujuy, Salta, Mendoza, Misiones, Catamarca, Santa Cruz, Santiago Del Estero, Corrientes, Chaco, San Juan* y *Formosa*.
 
-## ✍ Conclusiones
+En segundo lugar, analicé el dataframe correspondiente a las conexiones por provincia y tecnología, tomando en cuenta la evolución de las conexiones totales por tecnología en los último cuatro años.
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Conexiones_por_tecnologia.png"><p>
+De loanterior, detecté que la tecnología predominante es Cablemodem, teniendo ésta una buena calidad en cuanto a velocidad (por encima de 25mbps). Procedí a analizar más a detalle el estado actual de las provincias respecto sus conexiones por tecnología y detecté aquellas en las que predomina una tecnología con menor velocidad, distitna a Cablemodem. Posterior a eso, analicé la evolución de conexiones de Cablemodem en esas provincias en los últimos cuatro años.
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Evoluciones_cablemodem.png"><p>
+A partir de esto, grafiqué el crecimiento porcentual de estas conexiones en estas mismas provincias, con el fin de encontrar el promedio de este crecimiento en las provincias más bajas:
+  <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/crecimiento_porc_conexiones_tecnologia.png"><p>
+
+## ✍ Conclusiones Principales:
+* De acuerdo al primer gráfico *Evolución de conexiones Cablemodem*, se desprende que la mayoría de las provincias (porcentaje menor al 40%) presentan un incremento porcentual año tras año en los últimos cuatro años. San Luis y Formoza presentaron un retroceso entre 2018 y 2019.
+* Todas las provincias, a excepción de San Luis, tienen al menos un salto evidente de crecimiento entre un periodo y otro.
+* La provincia que más ha crecido en porcentaje de conexiones en Cablemodem en los últimos 4 años es Tucumán, teniendo un crecimiento del 20% (aproximadamente 5% anual).
+* La provincia que menos crecimiento porcentual presenta en los últimos 4 años es San Luis , teniendo un decrecimiento de 26%.
+* El promedio del crecimiento porcentual en los últimos 4 años es del 2.41% (aproximadamente 0.6% anual); sin embargo, este promedio está sesgado por el decrecimiento extremo de San Luis el el primer intervalo.
+* Ya que este decrecimiento en San Luis sesga el promedio de crecimiento porporcentual, la mediana proporciona un data más equilibrado de la realidad, siendo esta del 7.81% (casi 2% anual).
+* Dirigir el enfoque en el aumento del porcentaje de conexiones *Cablemodem* para las provincias San Luis, Tucumán, San Juan y Formosa.
+
+Finalmente, analicé el dataframe correspondiente a la velociadad media de bajada >b>(vmb)</b> por provincia y periodo. Ya que la FCC ha determinado que la velocidad de bajada a partir de la cual se considera la Banda Ancha y, por lo tanto, una conexión a internet de alta calidad es a partir de 25 mpbps (en esta [página](https://broadbandusa.ntia.doc.gov/about-us/frequently-asked-questions/how-fast-broadband#:~:text=The%20Federal%20Communications%20Commission%20) se puede encontrar información sobre esto; También este [artículo](https://espanol.verizon.com/articles/internet-speed-classifications/)), fijé la vmb en 30 mbps para salvaguardar cualquier falla de cobertura, ya que el dataframe provee un dato *promedio* de velocidad de bajada. En este sentido, revisé la cantidad de provincias que cumplen con esta condición.
+ <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/provincias_respecto_a_vmb_30mbps.png"><p>
+
+A partir de lo anterior, obtuve el porcentaje de provincias que están por encima de la vmb fijada, y analicé el crecimiento porcentual de éstas en los cuatro últimos años.
+
+<p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/crecimiento_porc_prov_vmb_30mbps.png"><p>
+
+## ✍ Conclusiones Principales:
+* Se observa que el porcentaje de provincias con vmb mayor o igual a 30 mbps se ha incrementado considerablemente año a año:
+> * En el 2018 ninguna provincia cumplía con la vmb estipulada.
+> * En el 2019 el 12.5% de provincias superaron la vmb estipulada.
+> * En el 2020 , el 29.17% de provincias superaron la vmb estipulada.
+> * En el 2021, 62.5% de provincias cuentan con una vmb de al menos 30 mbps.
+* Sin embargo, aún casi el 40% de provincias están por debajo de la vmb de 30 mbps, por lo que es importante poner el foco que aumentar este porcentaje, es decir, que más provincias superen el límite de velocidad establecido. 
+* Se observa también que el promedio de crecimiento porcentual es del 15.6% (4% trimestral aproximadamente).
+* Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
+
 
 # 📍 Propuesta de negocio
-Explicar la importancia
+Encontré, así, que hay oportunidades de mejora en el servicio de internet en prvincias específicas, tanto en las conexiones como en la en la calidad y velocidad de las mismas. Estas oportunidades deben abordarse con el fin de que Argentina como nación y cada una de sus provincias avancen más hacia el progreso social, de educación y económico, ya que en la actualidad estos aspectos de la vida del ser humano dependen en gran medida al acceso a internet.
 
 ## 👔 Clientes potenciales
+Así, estimo que dirigir este proyecto a gobierno nacional de Argentina y los subgobiernos regionales y provinciales, ya que éstos tienen como principal función e interés dirigir al pueblo argentino hacia el desarrollo, lo que influencia directamente al desarrollo de la nación.
 
 ## 🎯 Objetivo
+De acuerdo al análisis realizado, el *objetivo general* de este proyecto se orienta a **la expansión y mejora de la cobertura de red  en Argentina**, estando la expansión directamente relacionada al aumento de accesos, y la mejora a la garantía de una buena calidad en los accesos. Por lo tanto, el énfasis está en el *alcance* y la *calidad* de la red.
 
 ## 📶  KPI´s 
 1. <b>Conexiones por habitante</b>: Incrementar en 1.5% anual las conexiones por habitante en las provincias Tucumán, Jujuy, Salta, Mendoza, Misiones, Catamarca, Santa Cruz, Santiago Del Estero, Corrientes, Chaco, San Juan y Formosa en los próximos cuatro años.
@@ -150,6 +195,11 @@ Explicar la importancia
 >> * Meta : 82.5% provincias.
 
 # 📍 Herramientas utilizadas
+* Python
+* Pandas
+* Matplotlib
+* Seaborn
+* Power BI
 
 
 
