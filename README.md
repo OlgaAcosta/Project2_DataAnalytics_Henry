@@ -26,9 +26,7 @@ A partir del análisis realizado, he obtenido conclusiones que toman en cuenta d
 Cabe resaltar, sin ánimo de caer en la obviedad, que el rol a desempeñar es el de *Data Analyst*.
 
 # 📍 Contenido del repositorio
-En este repositorio se encuentran almacenadas cinco carpetas y dos archivos:
-* En la carpeta **Datatsets** se encuentra la data a partir de la cual se ha realizado el ETL (backup proporcionado por Henry).
-* En la carpeta **Datasets API** se encuentra la data obtenida a través de la API de [ENACOM](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/), la cual presentó algunas fallas de descarga no pudiéndose descargar todos los datasets requeridos, por lo cual  no llegaron a utilizarse en el proyecto.
+En este repositorio se encuentra almacenada una carpeta y  dos archivos:
 * En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
 * En la carpeta **POST_ETL_Datasets** se encuentra la data limpia después de realizado el proceso de ETL.
 * En la carpeta **POST_EDA_Datasets** se encuentra la data transformada después de realizado el proceso de EDA, la cual se ha utilizado para la realización del dashboard.
@@ -39,14 +37,14 @@ En este repositorio se encuentran almacenadas cinco carpetas y dos archivos:
 Los datos en bruto se obtuvieron, inicialmente de la página [ENACOM](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/) y a través de su API. Sin embargo, ésta presentó fallas de descarga y errores de ubicación, por lo que , finalmente, no se pudo trabajar a partir de ellas. 
 Por este motivo, se utilizó el backup proporcionado por Henry siendo éste el principal punto de origen de la data de este proyecto.
 Así también, se utilizó un archivo complementario que comprende información de la cantidad de población en Argentina por provincia y por periodo. Este archivo se obtuvo de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
-A continuación, se dejan los enlaces a google drive donde se encuentran los distintos datasets del proyecto, para su posterior descarga:
+A continuación, se dejan los enlaces a google drive donde se encuentran los distintos datasets del proyecto, para su posterior descarga, de ser requerida:
 
 ## 📁  Data
-* [Obtenidos por medio de la API](https://drive.google.com/drive/folders/1nxsFvCUPy5Fx2jk0A3rBNnBG9_KDktMb?usp=sharing)
+* [Obtenidos por medio de la API de ENACOM](https://drive.google.com/drive/folders/1nxsFvCUPy5Fx2jk0A3rBNnBG9_KDktMb?usp=sharing)
 * [Provistos por Henry](https://drive.google.com/drive/folders/1lwMXU-lQVbsmR31d3G1qXkqfSro0VOe8?usp=sharing)
 * [Post-ETL](https://drive.google.com/drive/folders/1mLA56sm9a16brw9xF-6WST5s0z2MqIV7?usp=sharing)
 * [Post-EDA](https://drive.google.com/drive/folders/1dE0vhE55ymS-UcgFpuUruRqUoOzHqpXl?usp=sharing)
-* [Complementarios - Población](https://drive.google.com/drive/folders/1r3ITs13ZhGMBvgGPSzk8Uq86c84JtCd7?usp=sharing)
+* [Complementarios - Población INDEC](https://drive.google.com/drive/folders/1r3ITs13ZhGMBvgGPSzk8Uq86c84JtCd7?usp=sharing)
 
 ## 📙  Diccionario de datos
 
