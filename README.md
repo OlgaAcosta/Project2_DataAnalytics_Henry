@@ -11,15 +11,17 @@
   <h3 align="center"> <i>Realizado por Olga Acosta </i></h3>
 
 # 📑 Índice
-- [Introducción](#-📍--Introducción)
-- [Contenido del repositorio](#Contenido-del-repositorio)
-- [Contexto de los datos](#Contexto-de-los-datos)
-- [Flujo de trabajo](#Flujo-de-trabajo)
-- [Propuesta de negocio](#Propuesta-de-negocio)
-- [Herramientas utilizadas](#Herramientas-utilizadas)
+- [Introducción](#introduccion)
+- [Contenido del repositorio](#contenidodelrepositorio)
+- [Contexto de los datos](#contextodelosdatos)
+- [Flujo de trabajo](#flujodetrabajo)
+- [ETL](#etl)
+- [EDA](#eda)
+- [Propuesta de negocio](#propuestadenegocio)
+- [Herramientas utilizadas](#herramientasutilizadas)
 
 
-# 📍  Introducción
+# 📍  Introducción <a name="introduccion"></a>
 Este proyecto corresponde al segundo de la etapa de *Lab's* del programa de **Data Science** de **Henry**. 
 
 En nuestra sociedad actual, la industria de las telecomunicaciones juega un papel esencial al facilitar el flujo de información a nivel internacional y mantener una comunicación continua, incluso en situaciones desafiantes como una pandemia mundial. La transferencia de datos y la comunicación se llevan a cabo principalmente a través de internet, líneas telefónicas fijas, telefonía móvil y otros medios que nos acompañan en prácticamente cualquier lugar del mundo. Así, se ha vuelto indispensable para los gobiernos nacionales medir el progreso de su región a través de, entre otros factores, el internet, sus conexiones, alcance y accesibilidad.
@@ -32,7 +34,7 @@ A partir del análisis realizado, he obtenido conclusiones que toman en cuenta d
 
 Cabe resaltar, sin ánimo de caer en la obviedad, que el rol a desempeñar es el de *Data Analyst*.
 
-# 📍 Contenido del repositorio
+# 📍 Contenido del repositorio <a name="contenidodelrepositorio"></a>
 En este repositorio se encuentra almacenada una carpeta y  dos archivos:
 * En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
 * En la carpeta **POST_ETL_Datasets** se encuentra la data limpia después de realizado el proceso de ETL.
@@ -40,7 +42,7 @@ En este repositorio se encuentra almacenada una carpeta y  dos archivos:
 * En el archivo **ETL** se encuentra la documentación y el paso a paso del ETL.
 * En el archivo **EDA** se encuentra la documentación y el paso a paso del EDA. 
 
-# 📍 Contexto de los datos
+# 📍 Contexto de los datos <a name="contextodelosdatos"></a>
 Los datos en bruto se obtuvieron, inicialmente de la página [ENACOM](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/) y a través de su API. Sin embargo, ésta presentó fallas de descarga y errores de ubicación, por lo que , finalmente, no se pudo trabajar a partir de ellas. 
 Por este motivo, se utilizó el backup proporcionado por Henry siendo éste el principal punto de origen de la data de este proyecto.
 Así también, se utilizó un archivo complementario que comprende información de la cantidad de población en Argentina por provincia y por periodo. Este archivo se obtuvo de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
@@ -80,9 +82,9 @@ A continuación, se dejan los enlaces a google drive donde se encuentran los dis
 | Otros Mbps                | Número de conexiones con velocidad de otros tipos en la provincia para el año y trimestre específicos.    |
 | Total suma Mbps           | Total de la suma de todas las conexiones de Internet por velocidad en la provincia para el año y trimestre específicos. |
 
-# 📍 Flujo de trabajo
+# 📍 Flujo de trabajo <a name="flujodetrabajo"></a>
 
-## 🛠️ [ETL](https://colab.research.google.com/drive/1BbIPZ5tFbL-5z8g2AsPRW4e6-6cq53Vm?usp=sharing)
+## 🛠️ [ETL](https://colab.research.google.com/drive/1BbIPZ5tFbL-5z8g2AsPRW4e6-6cq53Vm?usp=sharing) <a name="etl"></a>
 * Descarga de algunos datasets a través de la API. Al no poderse descargar todos los necesarios, se optó por usar el backup de Henry.
 * Cambio de tipos de datos, así como extracción de puntos en variables numéricas.
 * Unión de dataframes relacionadosy elección de columnas relevantes.
@@ -91,7 +93,7 @@ A continuación, se dejan los enlaces a google drive donde se encuentran los dis
 * Detección de duplicados.
 Las diferentes etapas de transformación se llevaron a cabo con el propósito de obtener un conjunto de datos de excelente calidad, coherente y pertinente para su posterior análisis. Al asegurar la limpieza y estandarización de los datos, se establece una base sólida para obtener conclusiones fiables y tomar decisiones fundamentadas.
 
-## 📊 [EDA](https://colab.research.google.com/drive/16Nlj4zOD7aJnHfpPK2QGs1Lk15Rx8416?usp=sharing)
+## 📊 [EDA](https://colab.research.google.com/drive/16Nlj4zOD7aJnHfpPK2QGs1Lk15Rx8416?usp=sharing) <a name="eda"></a>
 Analicé primero el dataset relacionado a las conexiones por rango de velocidad para ver su evolución en el tiempo, tomando en cuenta las conexiones totales.
   <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Total_conexiones_por_rango_velocidad.png" 
         alt="Conexiones_rango_velocidad"><p>
@@ -140,7 +142,7 @@ A partir de lo anterior, obtuve el porcentaje de provincias que están por encim
 * Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
 
 
-# 📍 Propuesta de negocio
+# 📍 Propuesta de negocio <a name="propuestadenegocio"></a>
 Encontré, así, que hay oportunidades de mejora en el servicio de internet en prvincias específicas, tanto en las conexiones como en la en la calidad y velocidad de las mismas. Estas oportunidades deben abordarse con el fin de que Argentina como nación y cada una de sus provincias avancen más hacia el progreso social, de educación y económico, ya que en la actualidad estos aspectos de la vida del ser humano dependen en gran medida al acceso a internet.
 
 ## 👔 Clientes potenciales
@@ -199,7 +201,7 @@ De acuerdo al análisis realizado, el *objetivo general* de este proyecto se ori
 
 >> * Meta : 82.5% provincias.
 
-# 📍 Herramientas utilizadas
+# 📍 Herramientas utilizadas <a name="herramientasutilizadas"></a>
 * Python
 * Pandas
 * Matplotlib
