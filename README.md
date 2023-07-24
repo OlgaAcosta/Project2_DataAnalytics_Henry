@@ -18,7 +18,7 @@
 - [EDA](#eda)
 - [Propuesta de negocio](#propuestadenegocio)
 - [Herramientas utilizadas](#herramientasutilizadas)
-
+- [Colaboradores](#colaboradores)
 
 # 📍  Introducción <a name="introduccion"></a>
 Este proyecto corresponde al segundo de la etapa de *Lab's* del programa de **Data Science** de **Henry**. 
@@ -202,9 +202,9 @@ De acuerdo al análisis realizado, el *objetivo general* de este proyecto se ori
 * Seaborn
 * Power BI
 
-# 📍 Colaboradores
+# 📍 Colaboradores <a name="colaboradores"></a>
 * Olga Acosta
->** Linkedin: https://www.linkedin.com/in/olga-acosta-manrique
+>> Linkedin: https://www.linkedin.com/in/olga-acosta-manrique
 
 
 
