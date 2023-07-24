@@ -34,10 +34,11 @@ A partir del análisis realizado, he obtenido conclusiones que toman en cuenta d
 Cabe resaltar, sin ánimo de caer en la obviedad, que el rol a desempeñar es el de *Data Analyst*.
 
 # 📍 Contenido del repositorio <a name="contenidodelrepositorio"></a>
-En este repositorio se encuentra almacenada una carpeta y tres archivos:
+En este repositorio se encuentran almacenadas cuatro carpetas y tres archivos:
 * En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
 * En la carpeta **POST_ETL_Datasets** se encuentra la data limpia después de realizado el proceso de ETL.
 * En la carpeta **POST_EDA_Datasets** se encuentra la data transformada después de realizado el proceso de EDA, la cual se ha utilizado para la realización del dashboard.
+* En la carpeta **src** se encuentran los recursos (imágenes) utilizadas para la elaboración del presente Readme.
 * En el archivo **ETL** se encuentra la documentación y el paso a paso del ETL.
 * En el archivo **EDA** se encuentra la documentación y el paso a paso del EDA.
 * En el archivo **Dashboard** se encuentra la presentación de Power Bi correspondiente al proyecto, la cual muestra el estado actual de los KPI´s.
@@ -100,10 +101,10 @@ Las diferentes etapas de transformación se llevaron a cabo con el propósito de
   <p align=center><img src="https://github.com/OlgaAcosta/Project2_DataAnalytics_Henry/blob/main/src/Crecimiento_porcentual_conexiones_provincia.png"><p>
 
 ### ✍ Conclusiones Principales:
->* De acuerdo al primer gráfico *Porcentaje de conexiones - Provincia Bajas*, se desprende que la mayoría de las provincias (porcentaje menor al 15%) presentan un incremento porcentual año tras año en los últimos cuatro años, a excepción de Mendoza y Santa Cruz, que disminuyeron entre los años 2019 a 2020 y 2018 a 2019 respectivamente.
->* Por otro lado, todas las provincias presentan un incremento porcentual entre el primer y último periodo evaluado (2018-1 a 2022-1).
->* Todas las provincias tienen al menos un salto evidente de crecimiento entre un periodo y otro.
->* Dirigir el enfoque en el aumento de conexiones por habitante en las provincias *Tucumán, Jujuy, Salta, Mendoza, Misiones, Catamarca, Santa Cruz, Santiago Del Estero, Corrientes, Chaco, San Juan* y *Formosa*.
+> * De acuerdo al primer gráfico *Porcentaje de conexiones - Provincia Bajas*, se desprende que la mayoría de las provincias (porcentaje menor al 15%) presentan un incremento porcentual año tras año en los últimos cuatro años, a excepción de Mendoza y Santa Cruz, que disminuyeron entre los años 2019 a 2020 y 2018 a 2019 respectivamente.
+> * Por otro lado, todas las provincias presentan un incremento porcentual entre el primer y último periodo evaluado (2018-1 a 2022-1).
+> * Todas las provincias tienen al menos un salto evidente de crecimiento entre un periodo y otro.
+> * Dirigir el enfoque en el aumento de conexiones por habitante en las provincias *Tucumán, Jujuy, Salta, Mendoza, Misiones, Catamarca, Santa Cruz, Santiago Del Estero, Corrientes, Chaco, San Juan* y *Formosa*.
 
 * En segundo lugar, analicé el dataframe correspondiente a las conexiones por provincia y tecnología, tomando en cuenta la evolución de las conexiones totales por tecnología en los último cuatro años.
 * De lo anterior, detecté que la tecnología predominante es Cablemodem, teniendo ésta una buena calidad en cuanto a velocidad (por encima de 25mbps). Procedí a analizar más a detalle el estado actual de las provincias respecto sus conexiones por tecnología y detecté aquellas en las que predomina una tecnología con menor velocidad, distitna a Cablemodem. Posterior a eso, analicé la evolución de conexiones de Cablemodem en esas provincias en los últimos cuatro años.
@@ -131,8 +132,8 @@ Las diferentes etapas de transformación se llevaron a cabo con el propósito de
 >> * En el 2020 , el 29.17% de provincias superaron la vmb estipulada.
 >> * En el 2021, 62.5% de provincias cuentan con una vmb de al menos 30 mbps.
 >* Sin embargo, aún casi el 40% de provincias están por debajo de la vmb de 30 mbps, por lo que es importante poner el foco que aumentar este porcentaje, es decir, que más provincias superen el límite de velocidad establecido. 
->* Se observa también que el promedio de crecimiento porcentual es del 15.6% (4% trimestral aproximadamente).
->* Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
+> Se observa también que el promedio de crecimiento porcentual es del 15.6% (4% trimestral aproximadamente).
+> Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
 
 
 # 📍 Propuesta de negocio <a name="propuestadenegocio"></a>
@@ -203,7 +204,7 @@ De acuerdo al análisis realizado, el *objetivo general* de este proyecto se ori
 
 # 📍 Colaboradores
 * Olga Acosta
->* Linkedin: https://www.linkedin.com/in/olga-acosta-manrique
+>** Linkedin: https://www.linkedin.com/in/olga-acosta-manrique
 
 
 
