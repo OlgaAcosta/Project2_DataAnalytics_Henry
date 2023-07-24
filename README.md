@@ -35,12 +35,13 @@ A partir del análisis realizado, he obtenido conclusiones que toman en cuenta d
 Cabe resaltar, sin ánimo de caer en la obviedad, que el rol a desempeñar es el de *Data Analyst*.
 
 # 📍 Contenido del repositorio <a name="contenidodelrepositorio"></a>
-En este repositorio se encuentra almacenada una carpeta y  dos archivos:
+En este repositorio se encuentra almacenada una carpeta y tres archivos:
 * En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
 * En la carpeta **POST_ETL_Datasets** se encuentra la data limpia después de realizado el proceso de ETL.
 * En la carpeta **POST_EDA_Datasets** se encuentra la data transformada después de realizado el proceso de EDA, la cual se ha utilizado para la realización del dashboard.
 * En el archivo **ETL** se encuentra la documentación y el paso a paso del ETL.
-* En el archivo **EDA** se encuentra la documentación y el paso a paso del EDA. 
+* En el archivo **EDA** se encuentra la documentación y el paso a paso del EDA.
+* En el archivo **Dashboard** se encuentra la presentación de Power Bi correspondiente al proyecto, la cual muestra el estado actual de los KPI´s.
 
 # 📍 Contexto de los datos <a name="contextodelosdatos"></a>
 Los datos en bruto se obtuvieron, inicialmente de la página [ENACOM](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/) y a través de su API. Sin embargo, ésta presentó fallas de descarga y errores de ubicación, por lo que , finalmente, no se pudo trabajar a partir de ellas. 
