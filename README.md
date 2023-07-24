@@ -35,7 +35,7 @@ Cabe resaltar, sin ánimo de caer en la obviedad, que el rol a desempeñar es el
 
 # 📍 Contenido del repositorio <a name="contenidodelrepositorio"></a>
 En este repositorio se encuentran almacenadas cuatro carpetas y tres archivos:
-* En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina.](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
+* En la carpeta **Data_Población** se encuentra un archivo complementario relacionado a estimaciones de población para distintos periodos y provincias de Argentina, obtenidos de [INDEC - Argentina](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-85).
 * En la carpeta **POST_ETL_Datasets** se encuentra la data limpia después de realizado el proceso de ETL.
 * En la carpeta **POST_EDA_Datasets** se encuentra la data transformada después de realizado el proceso de EDA, la cual se ha utilizado para la realización del dashboard.
 * En la carpeta **src** se encuentran los recursos (imágenes) utilizadas para la elaboración del presente Readme.
