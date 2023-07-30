@@ -131,9 +131,9 @@ Las diferentes etapas de transformación se llevaron a cabo con el propósito de
 >> * En el 2019 el 12.5% de provincias superaron la vmb estipulada.
 >> * En el 2020 , el 29.17% de provincias superaron la vmb estipulada.
 >> * En el 2021, 62.5% de provincias cuentan con una vmb de al menos 30 mbps.
->* Sin embargo, aún casi el 40% de provincias están por debajo de la vmb de 30 mbps, por lo que es importante poner el foco que aumentar este porcentaje, es decir, que más provincias superen el límite de velocidad establecido. 
-> Se observa también que el promedio de crecimiento porcentual es del 15.6% (4% trimestral aproximadamente).
-> Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
+>* Sin embargo, aún casi el 40% de provincias están por debajo de la vmb de 30 mbps, por lo que es importante poner el foco en aumentar este porcentaje, es decir, que más provincias superen el límite de velocidad establecido. 
+>* Se observa también que el promedio de crecimiento porcentual es del 15.6% (4% trimestral aproximadamente).
+>* Dirigir el enfoque en el aumento del porcentaje de provincias que cuentan con una vmb de 30mbps.
 
 
 # 📍 Propuesta de negocio <a name="propuestadenegocio"></a>
